@@ -1,34 +1,21 @@
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-"use strict"
-console.log('Я вчу JavaScript')
+const personalMuvieDB = {
+    count: numberOfFilms,
+    muvies: {},
+    actors: {},
+    genrеs: [],
+    privat: false
+};
 
-
-
-let myFirst = 'obizbash';
-console.log(myFirst);
-
-
-let ayeColor = 'blue';
-
-console.log(ayeColor);
-
-
-
-let user = '';
-let userName = 'Вася';
-user = userName;
-console.log(user);
+const a = prompt('Один из фильмов которые вы уже посмотрели?', ''),
+    b = prompt('На сколько оцените его?', ''),
+    c = prompt('Один из фильмов которые вы уже посмотрели?', ''),
+    d = prompt('На сколько оцените его?', '');
 
 
-
-//const answer = prompt("Вам есть 18?", "18");
-//console.log(answer);
-
-
-//const answers = [];
+personalMuvieDB.muvies[a] = b;
+personalMuvieDB.muvies[c] = d;
 
 
-
-const category = 'toys';
-
-console.log(`http:someurl.com/${category}/5`);
+console.log(personalMuvieDB);
